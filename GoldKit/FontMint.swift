@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum FontSize: Int {
+public enum FontSize: Int {
     case small = 10
     case medium = 11
     case large = 12
@@ -19,14 +19,14 @@ enum FontSize: Int {
     }
 }
 
-enum FontName: String {
+public enum FontName: String {
     case demiBoldCond = "AvenirNextCondensed-DemiBold"
     case regularCond = "AvenirNextCondensed-Regular"
     case demiBold = "AvenirNext-DemiBold"
     case regular = "AvenirNext-Regular"
 }
 
-class FontMint {
+public class FontMint {
     let allSizes:[Double]
     
     public init(allSizes:[Double]) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum PadSize: Int {
+public enum PadSize: Int {
     case xxSmall = 7
     case xSmall = 8
     case small = 9
@@ -26,7 +26,7 @@ enum PadSize: Int {
     
 }
 
-class PadMint {
+public class PadMint {
     let allSizes:[Double]
     
     public init(allSizes:[Double]) {

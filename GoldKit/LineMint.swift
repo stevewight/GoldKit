@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum LineSize: Int {
+public enum LineSize: Int {
     case xxSmall = 3
     case xSmall = 4
     case small = 5
@@ -27,7 +27,7 @@ enum LineSize: Int {
     
 }
 
-class LineMint {
+public class LineMint {
     let allSizes:[Double]
     
     public init(allSizes:[Double]) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ViewSize: Int {
+public enum ViewSize: Int {
     case xxSmall = 12
     case xSmall = 13
     case small = 14
@@ -27,7 +27,7 @@ enum ViewSize: Int {
     
 }
 
-class ViewMint {
+public class ViewMint {
     let allSizes:[Double]
 
     public init(allSizes:[Double]) {

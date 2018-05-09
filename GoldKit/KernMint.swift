@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum KernSize: Int {
+public enum KernSize: Int {
     case xSmall = 0
     case small = 1
     case medium = 2
@@ -24,7 +24,7 @@ enum KernSize: Int {
     
 }
 
-class KernMint {
+public class KernMint {
     let allSizes:[Double]
 
     public init(allSizes:[Double]) {

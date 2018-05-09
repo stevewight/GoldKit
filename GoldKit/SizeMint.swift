@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SizeMint {
+public class SizeMint {
     let divSize = 9     //smaller then baseSize
     let multiSize = 7   //larger then baseSize
     let ratio = 1.618   //golden

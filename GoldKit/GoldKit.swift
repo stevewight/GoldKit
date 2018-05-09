@@ -8,11 +8,11 @@
 
 import UIKit
 
-class GoldKit {
-    var baseSize = 12.0
-    var sizes = [Double]()
+public class GoldKit {
+    public var baseSize = 12.0
+    public var sizes = [Double]()
     
-    static let main:GoldKit = {
+    public static let main:GoldKit = {
         return GoldKit()
     }()
     
