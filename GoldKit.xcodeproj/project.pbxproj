@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AA92F17B20A0E02600152543 /* GoldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA92F17920A0E02600152543 /* GoldKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA92F18C20A3677100152543 /* LineMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18520A3677100152543 /* LineMint.swift */; };
+		AA92F18D20A3677100152543 /* ViewMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18620A3677100152543 /* ViewMint.swift */; };
+		AA92F18E20A3677100152543 /* GoldKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18720A3677100152543 /* GoldKit.swift */; };
+		AA92F18F20A3677100152543 /* PadMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18820A3677100152543 /* PadMint.swift */; };
+		AA92F19020A3677100152543 /* SizeMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18920A3677100152543 /* SizeMint.swift */; };
+		AA92F19120A3677100152543 /* FontMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18A20A3677100152543 /* FontMint.swift */; };
+		AA92F19220A3677100152543 /* KernMint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92F18B20A3677100152543 /* KernMint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA92F17620A0E02600152543 /* GoldKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoldKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA92F17920A0E02600152543 /* GoldKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoldKit.h; sourceTree = "<group>"; };
 		AA92F17A20A0E02600152543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA92F18520A3677100152543 /* LineMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineMint.swift; sourceTree = "<group>"; };
+		AA92F18620A3677100152543 /* ViewMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMint.swift; sourceTree = "<group>"; };
+		AA92F18720A3677100152543 /* GoldKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldKit.swift; sourceTree = "<group>"; };
+		AA92F18820A3677100152543 /* PadMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadMint.swift; sourceTree = "<group>"; };
+		AA92F18920A3677100152543 /* SizeMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeMint.swift; sourceTree = "<group>"; };
+		AA92F18A20A3677100152543 /* FontMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontMint.swift; sourceTree = "<group>"; };
+		AA92F18B20A3677100152543 /* KernMint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KernMint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,13 @@
 		AA92F17820A0E02600152543 /* GoldKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA92F18A20A3677100152543 /* FontMint.swift */,
+				AA92F18720A3677100152543 /* GoldKit.swift */,
+				AA92F18B20A3677100152543 /* KernMint.swift */,
+				AA92F18520A3677100152543 /* LineMint.swift */,
+				AA92F18820A3677100152543 /* PadMint.swift */,
+				AA92F18920A3677100152543 /* SizeMint.swift */,
+				AA92F18620A3677100152543 /* ViewMint.swift */,
 				AA92F17920A0E02600152543 /* GoldKit.h */,
 				AA92F17A20A0E02600152543 /* Info.plist */,
 			);
@@ -95,6 +116,7 @@
 				TargetAttributes = {
 					AA92F17520A0E02600152543 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA92F18E20A3677100152543 /* GoldKit.swift in Sources */,
+				AA92F19220A3677100152543 /* KernMint.swift in Sources */,
+				AA92F18F20A3677100152543 /* PadMint.swift in Sources */,
+				AA92F19120A3677100152543 /* FontMint.swift in Sources */,
+				AA92F18D20A3677100152543 /* ViewMint.swift in Sources */,
+				AA92F19020A3677100152543 /* SizeMint.swift in Sources */,
+				AA92F18C20A3677100152543 /* LineMint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +288,7 @@
 		AA92F17F20A0E02600152543 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sw.GoldKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +315,7 @@
 		AA92F18020A0E02600152543 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
