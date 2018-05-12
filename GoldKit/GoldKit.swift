@@ -20,34 +20,20 @@ public class GoldKit {
         calculate()
     }
     
-    public func font(_ size:FontSize, name:FontName = .regular)->UIFont {
-        let style = FontMint(allSizes: sizes)
-        return style.make(size: size, name: name)
+    public func font(_ size:Size, name:FontName = .regular)->UIFont {
+        let value = Mint(sizes: sizes).value(
+            size: size,
+            element: .font
+        )
+        return UIFont(
+            name:name.rawValue,
+            size:CGFloat(value)
+        )!
     }
     
-    public func fontSize(_ size:FontSize)->Double {
-        let mint = FontMint(allSizes: sizes)
-        return mint.value(size: size)
-    }
-    
-    public func viewSize(_ size:ViewSize)->Double {
-        let mint = ViewMint(allSizes: sizes)
-        return mint.value(size: size)
-    }
-    
-    public func padSize(_ size:PadSize)->Double {
-        let mint = PadMint(allSizes: sizes)
-        return mint.value(size: size)
-    }
-    
-    public func lineSize(_ size:LineSize)->Double {
-        let mint = LineMint(allSizes: sizes)
-        return mint.value(size: size)
-    }
-    
-    public func kernSize(_ size:KernSize)->Double {
-        let mint = KernMint(allSizes: sizes)
-        return mint.value(size: size)
+    public func size(_ size:Size, element:Element)->Double {
+        let mint = Mint(sizes: sizes)
+        return mint.value(size:size, element:element)
     }
     
     public func calculate() {
