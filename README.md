@@ -9,7 +9,7 @@ An open source framework for helping developer's/engineer's (or really anyone) b
 ## How?
 Using the golden ratio we calculate the sizes for a range of different UI elements that are required when creating a diverse and attractive interface.
 
-![Layout of GoldKit sizes](images/goldKit-sizes-2.png)
+![Layout of GoldKit sizes](images/goldKit-sizes-3.png)
 
 As the image above shows, there are 5 different ``enum`` size ranges we currently use:
 
