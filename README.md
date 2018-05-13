@@ -11,15 +11,42 @@ Using the golden ratio we calculate the sizes for a range of different UI elemen
 
 ![Layout of GoldKit sizes](images/goldKit-sizes-3.png)
 
-As the image above shows, there are 5 different ``enum`` size ranges we currently use:
+As the image above shows, there are 5 different ``Element`` types that we can work with, represented by an ``enum``:
 
-* ``ViewSizes`` - for large elements and container elements
-* ``PadSizes`` - for padding and margin sizes
-* ``FontSizes`` - for font sizes 
-* ``LineSizes`` - for small sizes, like lines
-* ``KernSizes`` - for very small sizes, like letter spacing
+```swift
+public enum Element {
+    case view
+    case pad
+    case font
+    case line
+    case kern
+    
+    ...
+}
+```
 
-Each one of the above ``enum``'s gives access to there sizes through pre-defined ``case``'s, ``xxSmall`` to ``xxLarge``, dependent upon which size ``enum`` is used.
+* ``.view`` - for large elements and container elements
+* ``.pad`` - for padding and margin sizes
+* ``.font`` - for font sizes 
+* ``.line`` - for small sizes, like lines
+* ``.kern`` - for very small sizes, like letter spacing
+
+Coupled with the ``Element``, we can use the ``Size`` ``enum`` to define what size of an ``Element`` we are going to use:
+
+```swift
+public enum Size: Int {
+    case xxSmall = 0
+    case xSmall = 1
+    case small = 2
+    case medium = 3
+    case large = 4
+    case xLarge = 5
+    case xxLarge = 6
+    
+    ...
+}
+```
+The sizes above are pretty self explanitory, just note that some of the sizes might note be practical for every use.  Play around with them and don't be affraid to combine multiple sizes together to get the size you need.  *The box does not exist!*
 
 ## Usage
 
