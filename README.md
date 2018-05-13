@@ -66,16 +66,14 @@ goldKit.baseSize = 13.0
 goldKit.calculate()
 ```
 
-### Getting Sizes
-To access a size just call one of the public methods, passing in a predefined size ``enum`` for the given method.
+### Accessing Sizes
+To access a size just call the ``.size(_ size:Size, element:Element)`` method, passing in a predefined ``Size`` and ``Element`` ``enums``.
 
 ```swift
 ...
-let viewSize = goldKit.viewSize(.large)
-// viewSize returns a Double value
+let viewSize = goldKit.size(.large, element:.view)
 // given the baseSize of 12.0, viewSize is 215.30...
 ```
-Predefined size ``enum``'s are between ``xxSmall`` and ``xxLarge`` depending on the element sizes needed. Xcode's autocomplete will help with seeing what sizes are available.
 
 ### UI Elements
 
@@ -83,7 +81,7 @@ Predefined size ``enum``'s are between ``xxSmall`` and ``xxLarge`` depending on 
 
 ```swift
 let font = goldKit.font(.medium)
-// this will create a UIFont instance w/size 19.41
+// this will create a UIFont instance w/size 19.41...
 // (with the default font family)
 ```
 
