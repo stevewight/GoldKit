@@ -85,6 +85,26 @@ let font = goldKit.font(.medium)
 // (with the default font family)
 ```
 
+## Installation
+The easiest way to use *GoldKit* is with CocoaPods
+
+### Installation with CocoaPods
+To integrate *GoldKit* into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+platform :ios, '11.0'
+
+target 'TargetName' do
+  pod 'GoldKit', :git => 'https://github.com/stevewight/GoldKit.git'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ## Pre-Release Version
 This is a pre-release version of *GoldKit* and although it is stable and should be working in all the above cases, things will be added, changed and potentially break.
 
