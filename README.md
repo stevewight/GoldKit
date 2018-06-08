@@ -1,4 +1,4 @@
-![GoldKit](images/goldKit-banner.png)
+![GoldKit](https://raw.githubusercontent.com/stevewight/GoldKit/master/images/goldKit-banner.png)
 
 ## What?
 An open source framework for helping developer's/engineer's (or really anyone) build beautiful UI's.
