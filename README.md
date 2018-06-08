@@ -9,7 +9,7 @@ An open source framework for helping developer's/engineer's (or really anyone) b
 ## How?
 Using the golden ratio we calculate the sizes for a range of different UI elements that are required when creating a diverse and attractive interface.
 
-![Layout of GoldKit sizes](images/goldKit-sizes-3.png)
+![Layout of GoldKit sizes](https://raw.githubusercontent.com/stevewight/GoldKit/master/images/goldKit-sizes-3.png)
 
 As the image above shows, there are 5 different ``Element`` types that we can work with, represented by an ``enum``:
 
@@ -95,7 +95,7 @@ To integrate *GoldKit* into your Xcode project using CocoaPods, specify it in yo
 platform :ios, '11.0'
 
 target 'TargetName' do
-  pod 'GoldKit', :git => 'https://github.com/stevewight/GoldKit.git'
+  pod 'GoldKit'
 end
 ```
 
