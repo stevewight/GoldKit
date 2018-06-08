@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "GoldKit"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Easily create mathematically beautiful user interfaces"
 
   s.homepage     = "https://github.com/stevewight/GoldKit"
-  s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Steve Wight" => "stevendouglaswight@gmail.com" }
   s.platform     = :ios, "11.0"
-  s.source       = { :git => "https://github.com/stevewight/GoldKit.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/stevewight/GoldKit.git", :tag => "0.0.4" }
 
   s.source_files  = "GoldKit/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { "SWIFT_VERSION" => "4" }
